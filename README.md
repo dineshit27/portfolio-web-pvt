@@ -52,65 +52,117 @@ This portfolio is built with the following technologies:
 | **Cursor IDE**   | AI-powered code editor for enhanced productivity and debugging.         |
 
 ## 📂 **Directory Structure**
+
 ```
-└── new-din/
-    ├── eslint.config.js
-    ├── index.html
-    ├── package.json
-    ├── postcss.config.js
-    ├── tailwind.config.js
-    ├── tsconfig.app.json
-    ├── tsconfig.json
-    ├── tsconfig.node.json
-    ├── vite.config.ts
-    ├── public/
-    │   └── assets/
-    └── src/
-        ├── App.tsx
-        ├── index.css
-        ├── main.tsx
-        ├── vite-env.d.ts
-        ├── components/
-        │   ├── About.tsx
-        │   ├── Badges.tsx
-        │   ├── Certifications.tsx
-        │   ├── Contact.tsx
-        │   ├── Education.tsx
-        │   ├── Experience.tsx
-        │   ├── Footer.tsx
-        │   ├── GitHub.tsx
-        │   ├── Hero.tsx
-        │   ├── Leetcode.tsx
-        │   ├── Link.tsx
-        │   ├── Navbar.tsx
-        │   ├── Projects.tsx
-        │   ├── Skills.tsx
-        │   ├── hero/
-        │   │   ├── ActionButtons.tsx
-        │   │   ├── ContactInfo.tsx
-        │   │   └── SocialLinks.tsx
-        │   ├── loading/
-        │   │   ├── HandwritingAnimation.tsx
-        │   │   ├── LoadingScreen.tsx
-        │   │   └── svgPaths.ts
-        │   └── ui/
-        │       ├── AboutCard.tsx
-        │       ├── BlogCard.tsx
-        │       ├── CertificationCard.tsx
-        │       ├── ContactForm.tsx
-        │       ├── CustomCursor.tsx
-        │       ├── EducationCard.tsx
-        │       ├── ProjectCard.tsx
-        │       ├── SectionTitle.tsx
-        │       ├── ThemeToggle.tsx
-        │       ├── Timeline.tsx
-        │       └── TypeWriter.tsx
-        └── hooks/
-            ├── useAnimatedLogo.ts
-            ├── useBlogs.ts
-            ├── useLoading.ts
-            └── useTheme.ts
+├── 📁 .firebase/ 🚫 (auto-hidden)
+├── 📁 .git/ 🚫 (auto-hidden)
+├── 📁 .vscode/ 🚫 (auto-hidden)
+├── 📁 Portfolio/
+│   ├── 📁 .git/ 🚫 (auto-hidden)
+│   ├── 📁 .github/
+│   │   └── 📁 workflows/
+│   ├── 📁 dist/ 🚫 (auto-hidden)
+│   ├── 📁 node_modules/ 🚫 (auto-hidden)
+│   ├── 📁 public/
+│   │   ├── 📁 assets/
+│   │   │   ├── 🖼️ 2nd event.jpg
+│   │   │   ├── 🖼️ 3rd.jpg
+│   │   │   ├── 🖼️ 4th.jpg
+│   │   │   ├── 🖼️ 5th.jpg
+│   │   │   ├── 🖼️ 6th.jpg
+│   │   │   ├── 🖼️ AI.png
+│   │   │   ├── 🖼️ aquawatt.png
+│   │   │   ├── 🖼️ brain.png
+│   │   │   ├── 🖼️ dinportf.png
+│   │   │   ├── 📕 dresume.pdf
+│   │   │   ├── 🖼️ favicon.png
+│   │   │   ├── 🖼️ food.png
+│   │   │   ├── 🖼️ gd.jpg
+│   │   │   ├── 🖼️ hackathon.jpeg
+│   │   │   ├── 🖼️ jdmweb.png
+│   │   │   ├── 🖼️ p2.png
+│   │   │   ├── 🖼️ profile.png
+│   │   │   ├── 🖼️ techhub430.png
+│   │   │   ├── 🖼️ uiux.jpg
+│   │   │   └── 🖼️ web dev.jpg
+│   │   └── 📄 robots.txt
+│   ├── 📁 src/
+│   │   ├── 📁 components/
+│   │   │   ├── 📁 hero/
+│   │   │   │   ├── 📄 ActionButtons.tsx
+│   │   │   │   ├── 📄 ContactInfo.tsx
+│   │   │   │   └── 📄 SocialLinks.tsx
+│   │   │   ├── 📁 loading/
+│   │   │   │   ├── 📄 HandwritingAnimation.tsx
+│   │   │   │   ├── 📄 LoadingScreen.tsx
+│   │   │   │   └── 📄 svgPaths.ts
+│   │   │   ├── 📁 ui/
+│   │   │   │   ├── 📄 AboutCard.tsx
+│   │   │   │   ├── 📄 BlogCard.tsx
+│   │   │   │   ├── 📄 CertificationCard.tsx
+│   │   │   │   ├── 📄 ContactForm.tsx
+│   │   │   │   ├── 📄 CustomCursor.tsx
+│   │   │   │   ├── 📄 EducationCard.tsx
+│   │   │   │   ├── 📄 ExperienceCard.tsx
+│   │   │   │   ├── 📄 LeetCodeDataExtractor.tsx
+│   │   │   │   ├── 📄 ProjectCard.tsx
+│   │   │   │   ├── 📄 ScrollToTop.tsx
+│   │   │   │   ├── 📄 SectionBackground.tsx
+│   │   │   │   ├── 📄 SectionTitle.tsx
+│   │   │   │   ├── 📄 SkillCard.tsx
+│   │   │   │   ├── 📄 ThemeToggle.tsx
+│   │   │   │   └── 📄 TypeWriter.tsx
+│   │   │   ├── 📄 About.tsx
+│   │   │   ├── 📄 Achievements.tsx
+│   │   │   ├── 📄 Badges.tsx
+│   │   │   ├── 📄 Blogs.tsx
+│   │   │   ├── 📄 Certifications.tsx
+│   │   │   ├── 📄 Contact.tsx
+│   │   │   ├── 📄 Education.tsx
+│   │   │   ├── 📄 Experience.tsx
+│   │   │   ├── 📄 Footer.tsx
+│   │   │   ├── 📄 GitHub.tsx
+│   │   │   ├── 📄 Hero.tsx
+│   │   │   ├── 📄 Leetcode.tsx
+│   │   │   ├── 📄 Link.tsx
+│   │   │   ├── 📄 Navbar.tsx
+│   │   │   ├── 📄 Projects.tsx
+│   │   │   ├── 📄 Services.tsx
+│   │   │   └── 📄 Skills.tsx
+│   │   ├── 📁 hooks/
+│   │   │   ├── 📄 useAnimatedLogo.ts
+│   │   │   ├── 📄 useBlogs.ts
+│   │   │   ├── 📄 useLoading.ts
+│   │   │   └── 📄 useTheme.ts
+│   │   ├── 📄 App.tsx
+│   │   ├── 🎨 index.css
+│   │   ├── 📄 main.tsx
+│   │   └── 📄 vite-env.d.ts
+│   ├── 🚫 .gitignore
+│   ├── 📜 LICENSE
+│   ├── 📖 README.MD
+│   ├── 📄 eslint.config.js
+│   ├── 🌐 index.html
+│   ├── 📄 package-lock.json
+│   ├── 📄 package.json
+│   ├── 📋 pglite-debug.log 🚫 (auto-hidden)
+│   ├── 📄 postcss.config.js
+│   ├── 📄 tailwind.config.js
+│   ├── 📄 tsconfig.app.json
+│   ├── 📄 tsconfig.json
+│   ├── 📄 tsconfig.node.json
+│   └── 📄 vite.config.ts
+├── 📁 node_modules/ 🚫 (auto-hidden)
+├── 📄 .firebaserc
+├── 🚫 .gitignore
+├── 📄 firebase.json
+├── 📄 package-lock.json
+├── 📄 package.json
+├── 📋 pglite-debug.log 🚫 (auto-hidden)
+└── 📋 vite-dev.log 🚫 (auto-hidden)
 ```
+
+---
 
 ## 📸 Screenshots
 
